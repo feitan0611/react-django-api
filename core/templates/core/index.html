@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="index">
+    <h1>Bonjour je sui django</h1>
+</section>
+
+<section class="developer">
+    {% for dev in developer %}
+    <div>
+        <h1>{{ dev.nom }}</h1>
+        <h2>{{ dev.prenom }}</h2>
+        <span>{{ dev.stack }}</span>
+    </div>
+    {% empty %}
+    <p>Aucun developpeur ajouté.</p>
+    {% endfor %}
+</section>
+
+{% endblock %}
