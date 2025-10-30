@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron:dev": "concurrently 'cd ../backend && python3 app.py' 'npm start' 'wait-on http://localhost:3000 && electron .'"
+    "electron:dev": "concurrently 'cd ../backend && python3 app.py' 'wait-on http://localhost:5000 && npm start' 'wait-on http://localhost:3000 && electron .'"
   },
   "eslintConfig": {
     "extends": [
